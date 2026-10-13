@@ -25,7 +25,8 @@ const Map<String, String> _ar = {
 const Map<String, String> _en = {
   'app_name': 'Open Gate',
   'welcome_title': 'Welcome to Open Gate',
-  'welcome_sub': 'Your marketplace in Yemen: general, real estate, cars, auctions',
+  'welcome_sub':
+      'Your marketplace in Yemen: general, real estate, cars, auctions',
   'start': 'Start browsing',
   'home_placeholder': 'Home is under construction',
   'settings': 'Settings',
