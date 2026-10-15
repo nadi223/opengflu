@@ -23,8 +23,17 @@ void main() {
 
   test('شارة جديد لأقل من 48 ساعة', () {
     final now = DateTime.utc(2026, 10, 16, 12);
-    expect(isNewListing(now.subtract(const Duration(hours: 47)), now, now: now), true);
-    expect(isNewListing(now.subtract(const Duration(hours: 49)), now, now: now), false);
-    expect(isNewListing(null, now.subtract(const Duration(hours: 1)), now: now), true);
+    expect(
+      isNewListing(now.subtract(const Duration(hours: 47)), now, now: now),
+      true,
+    );
+    expect(
+      isNewListing(now.subtract(const Duration(hours: 49)), now, now: now),
+      false,
+    );
+    expect(
+      isNewListing(null, now.subtract(const Duration(hours: 1)), now: now),
+      true,
+    );
   });
 }

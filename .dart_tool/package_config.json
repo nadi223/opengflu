@@ -44,6 +44,24 @@
       "languageVersion": "3.1"
     },
     {
+      "name": "cached_network_image",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/cached_network_image-4.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.12"
+    },
+    {
+      "name": "cached_network_image_platform_interface",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/cached_network_image_platform_interface-5.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.12"
+    },
+    {
+      "name": "cached_network_image_web",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/cached_network_image_web-2.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.12"
+    },
+    {
       "name": "characters",
       "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/characters-1.4.1",
       "packageUri": "lib/",
@@ -54,6 +72,12 @@
       "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/clock-1.1.3",
       "packageUri": "lib/",
       "languageVersion": "3.4"
+    },
+    {
+      "name": "code_assets",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/code_assets-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.10"
     },
     {
       "name": "collection",
@@ -134,6 +158,12 @@
       "languageVersion": "3.11"
     },
     {
+      "name": "flutter_cache_manager",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/flutter_cache_manager-3.4.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/flutter_lints-6.0.0",
       "packageUri": "lib/",
@@ -182,6 +212,12 @@
       "languageVersion": "3.9"
     },
     {
+      "name": "hooks",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/hooks-2.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.10"
+    },
+    {
       "name": "http",
       "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/http-1.6.0",
       "packageUri": "lib/",
@@ -198,6 +234,24 @@
       "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/intl-0.20.3",
       "packageUri": "lib/",
       "languageVersion": "3.9"
+    },
+    {
+      "name": "jni",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/jni-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "jni_flutter",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/jni_flutter-1.0.4+1",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "jni_util",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/jni_util-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
     },
     {
       "name": "json_annotation",
@@ -278,6 +332,24 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "objective_c",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/objective_c-9.6.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.10"
+    },
+    {
+      "name": "octo_image",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/octo_image-2.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "package_config",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/package_config-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.11"
+    },
+    {
       "name": "passkeys_platform_interface",
       "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/passkeys_platform_interface-2.10.0",
       "packageUri": "lib/",
@@ -288,6 +360,24 @@
       "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/path-1.9.1",
       "packageUri": "lib/",
       "languageVersion": "3.4"
+    },
+    {
+      "name": "path_provider",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/path_provider-2.1.6",
+      "packageUri": "lib/",
+      "languageVersion": "3.10"
+    },
+    {
+      "name": "path_provider_android",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/path_provider_android-2.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.9"
+    },
+    {
+      "name": "path_provider_foundation",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/path_provider_foundation-2.6.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.10"
     },
     {
       "name": "path_provider_linux",
@@ -338,16 +428,34 @@
       "languageVersion": "3.9"
     },
     {
+      "name": "pub_semver",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/pub_semver-2.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
       "name": "realtime_client",
       "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/realtime_client-2.13.2",
       "packageUri": "lib/",
       "languageVersion": "3.9"
     },
     {
+      "name": "record_use",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/record_use-1.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.10"
+    },
+    {
       "name": "riverpod",
       "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/riverpod-3.4.3",
       "packageUri": "lib/",
       "languageVersion": "3.12"
+    },
+    {
+      "name": "rxdart",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/rxdart-0.28.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "shared_preferences",
@@ -404,6 +512,36 @@
       "languageVersion": "3.1"
     },
     {
+      "name": "sqflite",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/sqflite-2.4.4+2",
+      "packageUri": "lib/",
+      "languageVersion": "3.12"
+    },
+    {
+      "name": "sqflite_android",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/sqflite_android-2.4.4+1",
+      "packageUri": "lib/",
+      "languageVersion": "3.12"
+    },
+    {
+      "name": "sqflite_common",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/sqflite_common-2.5.14",
+      "packageUri": "lib/",
+      "languageVersion": "3.12"
+    },
+    {
+      "name": "sqflite_darwin",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/sqflite_darwin-2.4.4+1",
+      "packageUri": "lib/",
+      "languageVersion": "3.12"
+    },
+    {
+      "name": "sqflite_platform_interface",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/sqflite_platform_interface-2.4.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.12"
+    },
+    {
       "name": "stack_trace",
       "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/stack_trace-1.12.2",
       "packageUri": "lib/",
@@ -450,6 +588,12 @@
       "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/supabase_flutter-2.18.3",
       "packageUri": "lib/",
       "languageVersion": "3.9"
+    },
+    {
+      "name": "synchronized",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/synchronized-3.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.12"
     },
     {
       "name": "term_glyph",
@@ -564,6 +708,12 @@
       "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/xml-7.1.0",
       "packageUri": "lib/",
       "languageVersion": "3.13"
+    },
+    {
+      "name": "yaml",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/yaml-3.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
     },
     {
       "name": "yet_another_json_isolate",

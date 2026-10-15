@@ -32,7 +32,8 @@ class _SkeletonBoxState extends State<SkeletonBox>
 
   @override
   Widget build(BuildContext context) {
-    final color = Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.12);
+    final color = Theme.of(context).colorScheme.onSurface
+        .withValues(alpha: 0.12);
     return ExcludeSemantics(
       child: FadeTransition(
         opacity: Tween<double>(begin: 0.4, end: 0.9).animate(_controller),

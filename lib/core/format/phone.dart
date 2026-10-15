@@ -21,7 +21,10 @@ String _westernDigits(String input) {
 /// يحوّل مدخل المستخدم إلى صيغة دولية E.164، أو null إن كان غير صالح.
 /// يقبل: 777123456 / 0777123456 / +967777123456 / 00967777123456 / 967777123456
 /// وأرقاماً دولية أخرى تبدأ بـ + أو 00.
-String? normalizePhone(String input, {String countryCode = kDefaultCountryCode}) {
+String? normalizePhone(
+  String input, {
+  String countryCode = kDefaultCountryCode,
+}) {
   var s = _westernDigits(input).replaceAll(_separators, '');
   if (s.isEmpty) return null;
 

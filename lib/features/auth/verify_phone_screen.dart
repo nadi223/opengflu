@@ -41,7 +41,9 @@ class _VerifyPhoneScreenState extends ConsumerState<VerifyPhoneScreen> {
       _info = null;
     });
     try {
-      await ref.read(authRepositoryProvider).verifyPhone(widget.phone, _code.text);
+      await ref
+          .read(authRepositoryProvider)
+          .verifyPhone(widget.phone, _code.text);
       if (!mounted) return;
       finishAuth(context, widget.from);
     } catch (e) {
@@ -73,7 +75,10 @@ class _VerifyPhoneScreenState extends ConsumerState<VerifyPhoneScreen> {
         const SizedBox(height: 4),
         Directionality(
           textDirection: TextDirection.ltr,
-          child: Text(widget.phone, style: const TextStyle(fontWeight: FontWeight.w700)),
+          child: Text(
+            widget.phone,
+            style: const TextStyle(fontWeight: FontWeight.w700),
+          ),
         ),
         const SizedBox(height: 16),
         TextField(
@@ -99,7 +104,10 @@ class _VerifyPhoneScreenState extends ConsumerState<VerifyPhoneScreen> {
           ),
         FilledButton(
           onPressed: _loading ? null : _verify,
-          child: LoadingLabel(loading: _loading, label: context.tr('verify_btn')),
+          child: LoadingLabel(
+            loading: _loading,
+            label: context.tr('verify_btn'),
+          ),
         ),
         TextButton(onPressed: _resend, child: Text(context.tr('resend_code'))),
       ],

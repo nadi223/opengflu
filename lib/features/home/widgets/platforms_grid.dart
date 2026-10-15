@@ -16,7 +16,9 @@ class PlatformsGrid extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final scale = (MediaQuery.textScalerOf(context).scale(14) / 14).clamp(1.0, 1.7).toDouble();
+    final scale = (MediaQuery.textScalerOf(context).scale(14) / 14)
+        .clamp(1.0, 1.7)
+        .toDouble();
     final tileHeight = 132.0 * scale;
 
     return Column(
@@ -40,7 +42,8 @@ class PlatformsGrid extends ConsumerWidget {
                   crossAxisSpacing: 12,
                   mainAxisExtent: tileHeight,
                 ),
-                itemBuilder: (context, i) => _PlatformTile(platform: result.data[i]),
+                itemBuilder: (context, i) =>
+                    _PlatformTile(platform: result.data[i]),
               ),
               loading: () => GridView.count(
                 shrinkWrap: true,
@@ -49,7 +52,10 @@ class PlatformsGrid extends ConsumerWidget {
                 mainAxisSpacing: 12,
                 crossAxisSpacing: 12,
                 childAspectRatio: 1.4,
-                children: List.generate(4, (_) => const SkeletonBox(height: 120)),
+                children: List.generate(
+                  4,
+                  (_) => const SkeletonBox(height: 120),
+                ),
               ),
               error: (error, stack) => SectionError(
                 error: error,
@@ -71,7 +77,8 @@ class _PlatformTile extends StatelessWidget {
     final scheme = Theme.of(context).colorScheme;
     final icon = platform.icon;
     // الأيقونة نص يحدده المالك (إيموجي مثلاً)؛ إن كانت فارغة أو معرّفاً تقنياً نعرض أول حرف.
-    final glyph = (icon != null && icon.isNotEmpty && !_identifierLike.hasMatch(icon))
+    final glyph =
+        (icon != null && icon.isNotEmpty && !_identifierLike.hasMatch(icon))
         ? icon
         : (platform.nameAr.isEmpty ? '?' : platform.nameAr.substring(0, 1));
 

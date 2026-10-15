@@ -68,7 +68,10 @@ class AppDrawer extends ConsumerWidget {
                   const SizedBox(height: 4),
                   Text(
                     user == null ? context.tr('menu_guest_hint') : subtitle,
-                    style: const TextStyle(color: Color(0xFFD9D2BE), fontSize: 12),
+                    style: const TextStyle(
+                      color: Color(0xFFD9D2BE),
+                      fontSize: 12,
+                    ),
                   ),
                 ],
               ),
@@ -111,7 +114,8 @@ class AppDrawer extends ConsumerWidget {
                     ListTile(
                       leading: const Icon(Icons.admin_panel_settings_outlined),
                       title: Text(context.tr('menu_admin')),
-                      onTap: () => _go(context, ref, _soon(context, 'menu_admin')),
+                      onTap: () =>
+                          _go(context, ref, _soon(context, 'menu_admin')),
                     ),
                   const Divider(),
                   ListTile(

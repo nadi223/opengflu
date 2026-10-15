@@ -47,8 +47,9 @@ final routerProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: '/platform/:key',
-        builder: (context, state) =>
-            PlatformPlaceholderScreen(platformKey: state.pathParameters['key'] ?? ''),
+        builder: (context, state) => PlatformPlaceholderScreen(
+          platformKey: state.pathParameters['key'] ?? '',
+        ),
       ),
       GoRoute(
         path: '/listing/:id',

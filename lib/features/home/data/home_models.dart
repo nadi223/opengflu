@@ -111,12 +111,15 @@ class LatestListing {
   final List<String> imageUrls;
 
   factory LatestListing.fromJson(Map<String, dynamic> j) {
-    final images = <Map<String, dynamic>>[
-      for (final e in (j['listing_images'] as List?) ?? const [])
-        Map<String, dynamic>.from(e as Map),
-    ]..sort(
-        (a, b) => (_num(a['sort_order']) ?? 0).compareTo(_num(b['sort_order']) ?? 0),
-      );
+    final images =
+        <Map<String, dynamic>>[
+          for (final e in (j['listing_images'] as List?) ?? const [])
+            Map<String, dynamic>.from(e as Map),
+        ]..sort(
+          (a, b) => (_num(a['sort_order']) ?? 0).compareTo(
+            _num(b['sort_order']) ?? 0,
+          ),
+        );
     return LatestListing(
       id: j['id'] as String,
       title: j['title'] as String,

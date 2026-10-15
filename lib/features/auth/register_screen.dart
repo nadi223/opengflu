@@ -51,7 +51,9 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
     });
     try {
       final repo = ref.read(authRepositoryProvider);
-      final phone = _phone.text.trim().isEmpty ? null : normalizePhone(_phone.text);
+      final phone = _phone.text.trim().isEmpty
+          ? null
+          : normalizePhone(_phone.text);
 
       if (_phoneMode) {
         final started = await repo.signUpWithPhone(
@@ -88,7 +90,8 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final phoneEnabled = ref.watch(appConfigProvider).value?.phoneAuthEnabled == true;
+    final phoneEnabled =
+        ref.watch(appConfigProvider).value?.phoneAuthEnabled == true;
 
     return AuthScaffold(
       title: context.tr('register_title'),
@@ -101,8 +104,14 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
               if (phoneEnabled) ...[
                 SegmentedButton<bool>(
                   segments: [
-                    ButtonSegment(value: false, label: Text(context.tr('by_email'))),
-                    ButtonSegment(value: true, label: Text(context.tr('by_phone'))),
+                    ButtonSegment(
+                      value: false,
+                      label: Text(context.tr('by_email')),
+                    ),
+                    ButtonSegment(
+                      value: true,
+                      label: Text(context.tr('by_phone')),
+                    ),
                   ],
                   selected: {_phoneMode},
                   onSelectionChanged: (s) => setState(() {
@@ -121,7 +130,8 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
                   prefixIcon: const Icon(Icons.person_outline),
                   border: const OutlineInputBorder(),
                 ),
-                validator: (v) => (v ?? '').trim().length < 2 ? context.tr('err_name') : null,
+                validator: (v) =>
+                    (v ?? '').trim().length < 2 ? context.tr('err_name') : null,
               ),
               const SizedBox(height: 14),
               if (!_phoneMode) ...[
@@ -136,7 +146,8 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
                     border: const OutlineInputBorder(),
                   ),
                   validator: (v) =>
-                      RegExp(r'^[^@\s]+@[^@\s]+\.[^@\s]+$').hasMatch(cleanEmail(v ?? ''))
+                      RegExp(r'^[^@\s]+@[^@\s]+\.[^@\s]+$')
+                          .hasMatch(cleanEmail(v ?? ''))
                       ? null
                       : context.tr('err_email'),
                 ),
@@ -148,7 +159,9 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
                 textDirection: TextDirection.ltr,
                 autofillHints: const [AutofillHints.telephoneNumber],
                 decoration: InputDecoration(
-                  labelText: context.tr(_phoneMode ? 'phone' : 'phone_optional'),
+                  labelText: context.tr(
+                    _phoneMode ? 'phone' : 'phone_optional',
+                  ),
                   hintText: context.tr('phone_hint'),
                   prefixIcon: const Icon(Icons.phone_outlined),
                   border: const OutlineInputBorder(),
@@ -158,7 +171,9 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
                   if (value.isEmpty) {
                     return _phoneMode ? context.tr('err_phone') : null;
                   }
-                  return normalizePhone(value) == null ? context.tr('err_phone') : null;
+                  return normalizePhone(value) == null
+                      ? context.tr('err_phone')
+                      : null;
                 },
               ),
               const SizedBox(height: 14),
@@ -172,11 +187,16 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
                   prefixIcon: const Icon(Icons.lock_outline),
                   border: const OutlineInputBorder(),
                   suffixIcon: IconButton(
-                    icon: Icon(_obscure ? Icons.visibility_outlined : Icons.visibility_off_outlined),
+                    icon: Icon(
+                      _obscure
+                          ? Icons.visibility_outlined
+                          : Icons.visibility_off_outlined,
+                    ),
                     onPressed: () => setState(() => _obscure = !_obscure),
                   ),
                 ),
-                validator: (v) => (v ?? '').length < 8 ? context.tr('err_password') : null,
+                validator: (v) =>
+                    (v ?? '').length < 8 ? context.tr('err_password') : null,
               ),
               const SizedBox(height: 14),
               TextFormField(
@@ -188,18 +208,28 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
                   prefixIcon: const Icon(Icons.lock_outline),
                   border: const OutlineInputBorder(),
                 ),
-                validator: (v) => v != _password.text ? context.tr('err_password_match') : null,
+                validator: (v) => v != _password.text
+                    ? context.tr('err_password_match')
+                    : null,
               ),
               const SizedBox(height: 18),
               ErrorText(_error),
               if (_info != null)
                 Padding(
                   padding: const EdgeInsets.only(bottom: 12),
-                  child: Text(_info!, style: TextStyle(color: Theme.of(context).colorScheme.primary)),
+                  child: Text(
+                    _info!,
+                    style: TextStyle(
+                      color: Theme.of(context).colorScheme.primary,
+                    ),
+                  ),
                 ),
               FilledButton(
                 onPressed: _loading ? null : _submit,
-                child: LoadingLabel(loading: _loading, label: context.tr('register_btn')),
+                child: LoadingLabel(
+                  loading: _loading,
+                  label: context.tr('register_btn'),
+                ),
               ),
               const SizedBox(height: 8),
               TextButton(

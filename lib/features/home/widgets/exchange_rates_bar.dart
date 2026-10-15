@@ -23,7 +23,8 @@ class ExchangeRatesBar extends ConsumerWidget {
             DateTime? latest;
             for (final r in rates) {
               final t = r.updatedAt;
-              if (t != null && (latest == null || t.isAfter(latest))) latest = t;
+              if (t != null && (latest == null || t.isAfter(latest)))
+                latest = t;
             }
             return Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -103,16 +104,22 @@ class _CityCard extends StatelessWidget {
         children: [
           Text(
             title,
-            style: Theme.of(context).textTheme.titleSmall?.copyWith(
-              color: scheme.primary,
-              fontWeight: FontWeight.w700,
-            ),
+            style: Theme.of(context).textTheme.titleSmall
+                ?.copyWith(color: scheme.primary, fontWeight: FontWeight.w700),
           ),
           const SizedBox(height: 6),
           if (usd != null)
-            _line(context, context.tr('cur_usd'), formatNumber(usd, decimals: 0)),
+            _line(
+              context,
+              context.tr('cur_usd'),
+              formatNumber(usd, decimals: 0),
+            ),
           if (sar != null)
-            _line(context, context.tr('cur_sar'), formatNumber(sar, decimals: 0)),
+            _line(
+              context,
+              context.tr('cur_sar'),
+              formatNumber(sar, decimals: 0),
+            ),
         ],
       ),
     );

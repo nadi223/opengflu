@@ -17,7 +17,9 @@ class LatestListingsStrip extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final scale = (MediaQuery.textScalerOf(context).scale(14) / 14).clamp(1.0, 1.8).toDouble();
+    final scale = (MediaQuery.textScalerOf(context).scale(14) / 14)
+        .clamp(1.0, 1.8)
+        .toDouble();
     final height = 215.0 * scale;
 
     return Column(
