@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 
+// ملاحظة: النصوص الجديدة عربية أولاً. المفتاح غير المترجم للإنجليزية يعود للعربية.
 const Map<String, String> _ar = {
   'app_name': 'Open Gate',
   'welcome_title': 'مرحباً بك في Open Gate',
@@ -20,6 +21,63 @@ const Map<String, String> _ar = {
   'startup_failed': 'تعذّر تشغيل التطبيق، حاول لاحقاً',
   'not_found': 'الصفحة غير موجودة',
   'back_home': 'العودة للرئيسية',
+  // الرئيسية
+  'retry': 'إعادة المحاولة',
+  'rates_title': 'أسعار الصرف مقابل الريال اليمني',
+  'rates_updated': 'آخر تحديث',
+  'city_sanaa': 'صنعاء',
+  'city_aden': 'عدن',
+  'cur_usd': 'دولار',
+  'cur_sar': 'ريال سعودي',
+  'live_auctions': '🔴 مزادات مباشرة الآن',
+  'latest_listings': '🆕 أحدث الإعلانات',
+  'no_listings': 'لا توجد إعلانات بعد',
+  'platforms': 'المنصات',
+  'new_badge': '🔥 جديد',
+  'price_on_request': 'السعر عند الاتصال',
+  'follow_us': 'تابعنا',
+  'coming_soon': 'هذه الشاشة قيد البناء وستتوفر قريباً',
+  // القائمة الجانبية
+  'menu_add_listing': 'إضافة إعلان',
+  'menu_favorites': 'المفضلة',
+  'menu_chats': 'المحادثات',
+  'menu_admin': 'لوحة المالك',
+  'menu_login': 'تسجيل الدخول',
+  'menu_logout': 'تسجيل الخروج',
+  'menu_guest': 'زائر',
+  'menu_guest_hint': 'سجّل الدخول لنشر إعلان أو المزايدة أو المحادثة',
+  // المصادقة
+  'login_title': 'تسجيل الدخول',
+  'register_title': 'إنشاء حساب',
+  'by_email': 'بالبريد',
+  'by_phone': 'بالهاتف',
+  'email': 'البريد الإلكتروني',
+  'phone': 'رقم الهاتف',
+  'phone_optional': 'رقم الهاتف (اختياري)',
+  'phone_hint': '777123456 أو +967777123456',
+  'password': 'كلمة المرور',
+  'confirm_password': 'تأكيد كلمة المرور',
+  'full_name': 'الاسم الكامل',
+  'login_btn': 'دخول',
+  'register_btn': 'إنشاء الحساب',
+  'no_account': 'ليس لديك حساب؟ أنشئ حساباً',
+  'have_account': 'لديك حساب؟ سجّل الدخول',
+  'continue_guest': 'المتابعة كزائر',
+  'err_email': 'أدخل بريداً إلكترونياً صحيحاً',
+  'err_phone': 'أدخل رقم هاتف صحيحاً',
+  'err_password': 'كلمة المرور 8 أحرف على الأقل',
+  'err_password_match': 'كلمتا المرور غير متطابقتين',
+  'err_name': 'أدخل اسمك (حرفان على الأقل)',
+  'err_required': 'هذا الحقل مطلوب',
+  'verify_title': 'تأكيد رقم الهاتف',
+  'verify_hint': 'أدخل الرمز المرسل إلى هاتفك',
+  'verify_code': 'رمز التحقق',
+  'verify_btn': 'تأكيد',
+  'resend_code': 'إعادة إرسال الرمز',
+  'code_resent': 'تم إرسال الرمز مرة أخرى',
+  'confirm_email_sent':
+      'تم إنشاء الحساب. افتح بريدك واضغط رابط التأكيد ثم سجّل الدخول.',
+  'back_to_login': 'العودة لتسجيل الدخول',
 };
 
 const Map<String, String> _en = {
@@ -28,7 +86,6 @@ const Map<String, String> _en = {
   'welcome_sub':
       'Your marketplace in Yemen: general, real estate, cars, auctions',
   'start': 'Start browsing',
-  'home_placeholder': 'Home is under construction',
   'settings': 'Settings',
   'theme': 'Appearance',
   'theme_dark': 'Dark',
@@ -43,6 +100,13 @@ const Map<String, String> _en = {
   'startup_failed': 'Could not start the app, please try later',
   'not_found': 'Page not found',
   'back_home': 'Back to home',
+  'retry': 'Retry',
+  'platforms': 'Platforms',
+  'login_title': 'Sign in',
+  'register_title': 'Create account',
+  'email': 'Email',
+  'password': 'Password',
+  'login_btn': 'Sign in',
 };
 
 extension TrContext on BuildContext {

@@ -41,6 +41,8 @@ Future<void> main() async {
 
   runApp(
     ProviderScope(
+      // لا إعادة محاولة تلقائية: نعرض الكاش أو رسالة واضحة فوراً.
+      retry: (retryCount, error) => null,
       overrides: [sharedPreferencesProvider.overrideWithValue(prefs)],
       child: ready ? const OpenGateApp() : const _StartupFailed(),
     ),
